@@ -24,16 +24,16 @@
             </nav>
             <main>
                 <div id="scrollbar">
-                    <table> <!-- The table rows are hardcoded here temporarily. They eventually will be dynamically created and updated from backend messages. We need to write JavaScript to handle populating the table from the messages recieved. tr are table rows, td are table data elements. -->
+                    <table id="table"> <!-- The table rows are hardcoded here temporarily. They eventually will be dynamically created and updated from backend messages. We need to write JavaScript to handle populating the table from the messages recieved. tr are table rows, td are table data elements. -->
                         <tr id="unique1">
                             <td><img id="delete" src="../ProjectFOX/images/trash%20bin.png" alt="red trash can icon"></td>
                             <td> timestamp </td>
                             <td>type</td>
                             <td>location</td>
                             <td> TLE </td>
-                            <div class="btn-group"><td><button id="FIX1" onclick="FIXActive()" type="button"><b>FIX</b></button></td>
-                            <td><button id="KILL1" onclick="KILLActive()"><b>KILL</b></button></td></div>
-                            <td><img id="pin" src="../ProjectFOX/images/yellowpushpin.jpg" alt="push pin icon"></td>
+                            <div class="btn-group"><td><button id="FIX1" onclick="FIXActive(id)" type="button"><b>FIX</b></button></td>
+                            <td><button id="KILL1" onclick="KILLActive(id)"><b>KILL</b></button></td></div>
+                            <td><img id="pin1" src="../ProjectFOX/images/yellowpushpin.jpg" onclick="GoldBorderandPinToTop('unique1')" alt="push pin icon"></td>
                         </tr>
                         <tr id= "unique2">
                             <td><img id="delete" src="../ProjectFOX/images/trash%20bin.png" alt="red trash can icon"></td>
@@ -41,9 +41,9 @@
                             <td>10</td>
                             <td>222/22</td>
                             <td>feet</td>
-                            <div><td><button id="FIX2" onclick="FIXActive()" type="button"><b>FIX</b></button></td></div>
-                            <div><td><button id="KILL2" onclick="KILLActive()"><b>KILL</b></button></td></div>
-                            <td><img id="pin" src="../ProjectFOX/images/yellowpushpin.jpg" alt="push pin icon"></td>
+                            <div><td><button id="FIX2" onclick="FIXActive(id)" type="button"><b>FIX</b></button></td></div>
+                            <div><td><button id="KILL2" onclick="KILLActive(id)"><b>KILL</b></button></td></div>
+                            <td><img id="pin2" src="../ProjectFOX/images/yellowpushpin.jpg" onclick="GoldBorderandPinToTop('unique2')" alt="push pin icon"></td>
                         </tr>
                         <tr id="unique3">
                             <td><img id="delete" src="../ProjectFOX/images/trash%20bin.png" alt="red trash can icon"></td>
@@ -51,9 +51,9 @@
                             <td>22</td>
                             <td>555/55</td>
                             <td>nm</td>
-                            <div class="btn-group"><td><button id="FIX3" onclick="FIXActive()" type="button"><b>FIX</b></button></td>
-                                <td><button id="KILL3" onclick="KILLActive()"><b>KILL</b></button></td></div>
-                            <td><img id="pin" src="../ProjectFOX/images/yellowpushpin.jpg" alt="push pin icon"></td>
+                            <div class="btn-group"><td><button id="FIX3" onclick="FIXActive(id)" type="button"><b>FIX</b></button></td>
+                                <td><button id="KILL3" onclick="KILLActive(id)"><b>KILL</b></button></td></div>
+                            <td><img id="pin3" src="../ProjectFOX/images/yellowpushpin.jpg" onclick="GoldBorderandPinToTop('unique3')" alt="push pin icon"></td>
                         </tr>
                         <tr id= "unique4">
                             <td><img id="delete" src="../ProjectFOX/images/trash%20bin.png" alt="red trash can icon"></td>
@@ -61,9 +61,10 @@
                             <td>15</td>
                             <td>358145</td>
                             <td>nm</td>
-                            <div><td><button id="FIX4" onclick="FIXActive()" type="button"><b>FIX</b></button></td></div>
-                            <div><td><button id="KILL4" onclick="KILLActive()"><b>KILL</b></button></td></div>
-                            <td><img id="pin" src="../ProjectFOX/images/yellowpushpin.jpg" alt="push pin icon"></td>
+                            <div><td><button id="FIX4" onclick="FIXActive(id)" type="button"><b>FIX</b></button></td></div>
+                            <div><td><button id="KILL4" onclick="KILLActive(id)"><b>KILL</b></button></td></div>
+                            <td><img id="pin4" src="../ProjectFOX/images/yellowpushpin.jpg" onclick="GoldBorderandPinToTop('unique4')" alt="push pin icon"></td>
+                            
                         </tr>
                         <tr id="unique5">
                             <td><img id="delete" src="../ProjectFOX/images/trash%20bin.png" alt="red trash can icon"></td>
@@ -71,9 +72,9 @@
                             <td> 2 </td>
                             <td>333/44</td>
                             <td>20'</td>
-                            <div class="btn-group"><td><button id="FIX5" onclick="FIXActive()" type="button"><b>FIX</b></button></td>
-                                <td><button id="KILL5" onclick="KILLActive()"><b>KILL</b></button></td></div>
-                            <td><img id="pin" src="../ProjectFOX/images/yellowpushpin.jpg" alt="push pin icon"></td>
+                            <div class="btn-group"><td><button id="FIX5" onclick="FIXActive(id)" type="button"><b>FIX</b></button></td>
+                                <td><button id="KILL5" onclick="KILLActive(id)"><b>KILL</b></button></td></div>
+                            <td><img id="pin5" src="../ProjectFOX/images/yellowpushpin.jpg"  onclick="GoldBorderandPinToTop('unique5')" alt="push pin icon"></td>
                         </tr>
                     </table>
                 </div>

@@ -85,7 +85,6 @@ function SwipeLeftAction() {
     document.getElementById("unique1").style.display = "none";
 }
 //When Pin Icon is Click this will add Gold Border to the Task and Move it to the top.
-var index=5;
 function GoldBorderandPinToTop(id){ 
     var rows = document.getElementById("table").rows;
     document.getElementById("unique1").style.outline = "2px solid black";
@@ -107,17 +106,5 @@ function GoldBorderandPinToTop(id){
 }
 
 
-function upNdown()
-{
-    var rows = document.getElementById("table").rows,
-        parent = rows[index].parentNode;
-     
-         if(index > 1){
-            parent.insertBefore(rows[index],rows[index - 1]);
-            // when the row go up the index will be equal to index - 1
-            index--;
-        }
-     
-}
 
     
